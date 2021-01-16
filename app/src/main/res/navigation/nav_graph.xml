@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="@string/title_start_fragment"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.gladson.smarttechquiz.ui.start.StartFragment"
+        android:label="@string/title_start_fragment"
+        tools:layout="@layout/start_fragment">
+        <action
+            android:id="@+id/action_startFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.gladson.smarttechquiz.ui.createaccount.CreateAccountFragment"
+        android:label="@string/title_create_account"
+        tools:layout="@layout/create_account_fragment" />
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.gladson.smarttechquiz.ui.mainmenu.MainMenuFragment"
+        tools:layout="@layout/main_menu_fragment" />
+</navigation>
