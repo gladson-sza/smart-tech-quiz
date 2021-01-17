@@ -75,7 +75,11 @@
         android:text="@string/label_sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true"
+        android:paddingHorizontal="16dp"
+        android:background="?attr/selectableItemBackground"
+        style="@style/TextImportant" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

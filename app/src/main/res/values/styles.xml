@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextImportant">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">@color/deep_purple</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>
